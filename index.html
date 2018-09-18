@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Lato|Lustria" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+
+    <title>Train Scheduler</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container header rounded">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="headline">Train World</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container schedule rounded">
+        <div class="row rounded">
+            <div class="col-12 head rounded">
+                <h1 class="head">Current Train Schedule</h1>
+            </div>
+        </div>
+        <div class="row bold-header">
+            <table class="train-sched">
+                <tr>
+                    <th class="col-3 train-val">
+                        <h1 class="details">Train Name</h1>
+                    </th>
+                    <th class="col-3 train-val">
+                        <h1 class="details">Destination</h1>
+                    </th>
+                    <th class="col-2 train-val">
+                        <h1 class="details">Frequency (min)</h1>
+                    </th>
+                    <th class="col-2 train-val">
+                        <h1 class="details">Next arrival</h1>
+                    </th>
+                    <th class="col-2 train-val">
+                        <h1 class="details">Minutes Away</h1>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="container add-train-container rounded">
+        <div class="row rounded ">
+            <div class="col-12 head rounded">
+                <h1 class="head">Add Train</h1>
+            </div>
+        </div>
+        <div class="row bold-header">
+            <div class="col-12">
+                <form id="submit-train">
+                    <div class="form-group">
+                        <label for="train-name">Train Name:</label>
+                        <input type="text" class="form-control" id="train-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">First Train Time:</label>
+                        <input type="time" class="form-control" id="time">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+                    <button type="submit" class="btn btn-default add-train">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
