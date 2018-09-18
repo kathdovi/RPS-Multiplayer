@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/full-bloom.png)
+    background-image: url(../images/circles-and-roundabouts.png.png)
 }
 .header {
     font-family: 'Delius Swash Caps', cursive;
@@ -48,6 +48,7 @@ body {
 
 .normal {
     font-weight: normal;
+    line-height: 30px;
 }
 
 .schedule {
