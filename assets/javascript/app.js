@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     // Initialize Firebase
     var config = {
         apiKey: "AIzaSyDoihEuq076kLK01vlY4zwj7Y5UwgbwCNo",
@@ -56,11 +56,11 @@ $(document).ready(function () {
         // If train hasn't come yet:
         if (timeDiff < 0) {
             var minutesTill = Math.abs(timeDiff) + 1;
-            var nextTrain = moment().add(minutesTill, "minutes").format("hh:mm");
+            var nextTrain = moment().add(minutesTill, "minutes").format("HH:mm");
         } else {    // Train has come already today:
             var timeLeft = timeDiff % freqFB
             var minutesTill = freqFB - timeLeft;
-            var nextTrain = moment().add(minutesTill, "minutes").format("hh:mm");
+            var nextTrain = moment().add(minutesTill, "minutes").format("HH:mm");
         }
 
         // Change the HTML to reflect
